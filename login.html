@@ -1,0 +1,12 @@
+<script src="login.js"></script>
+<script>
+  var doLoginStuff = function() {
+    var user = document.getElementById("user").value;
+    var pass = document.getElementById("pass").value;
+    mx_sendLogin(user,pass);
+  }
+</script>
+<h1>log into matrick</h1>
+username: <input type="text" id="user" /><br>
+password: <input type="password" id="pass" /><br>
+<button onclick="doLoginStuff()">log in</button>
