@@ -1,0 +1,10 @@
+<h1>This page is logging you in</h1>
+<p></p>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  var uid = params.get("uid");
+  var token = params.get("atoken");
+  var username = document.getElementById("hello").innerText = uid.split(":")[0];
+  document.cookie = "mxid="+uid+"; atoken="+token+"; username="+username+"; path=/";
+  window.location.href = "chat";
+</script>
