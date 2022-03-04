@@ -6,9 +6,9 @@ function mx_sendLogin(mxid, password) {
 	}
 	
 	MXLOGIN.open("POST","https://matrix.org/_matrix/client/r0/login");
-	MXLOGIN.send({
-    	"password": password,
-   		"user": mxid,
+	MXLOGIN.send(JSON.stringify({
+    	  "password": password,
+   	  "user": mxid,
   	  "type": "m.login.password"
-	});
+	}));
 }
