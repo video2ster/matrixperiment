@@ -1,6 +1,6 @@
 var MXLOGIN = new XMLHttpRequest();
 
-function sendReq(mxid, password) {
+function mx_sendLogin(mxid, password) {
 	MXLOGIN.onreadystatechange = function () {
   	console.log(MXLOGIN.responseText);
 	}
