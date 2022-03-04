@@ -1,0 +1,9 @@
+<h1>channels</h1>
+<ul id="clist"></ul>
+<p id="hello">pls wait</p>
+<script src="channel.js"></script>
+<script>
+  const params = new URLSearchParams(window.location.search);
+  var uid = params.get("uid");
+  document.getElementById("hello").innerText = uid.split(":")[0];
+</script>
